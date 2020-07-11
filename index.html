@@ -14,39 +14,35 @@
         <script src="js/scripts.js" defer></script>    
     </head>
     <body>
-        <section class="container">
+        <main class="box container">
             <h1>To Do App </h1>
             <section>
         <!---To-Do Form--->
                 <h2>To-Do Form</h2>
-                <form>
-                    <div class="To-Do Form container box"> 
-                        <label for="newTask">New task</label>
-                        <input type="text" id="txtVal" Placeholder="Title..."/>
-                        <button onclick="addLi()">Add</button>
+                <form> 
+                    <div class="To-Do"> 
+                        <label for="newTask">New Task</label>
+                        <input type="text" name="newTask" Placeholder="Enter a new item here..."/>
+                        <button type="submit">Add</button>
                     </div> 
                     <p id="error-output"></p>          
                 </form> 
             </section> 
-           
-            <!---Active To-Dos--->
-            <div class="active to-do list box">
-                <h2>Active To-Dos</h2>
-                <ul id="myAList">
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                    <li><input type="checkbox"></li>
-                </ul> 
-            </div>
-           
-            <!---Completed To-Dos--->
-            <div class="completed to-do list box">
-                <h2>Completed To-Dos</h2>
-                <ul id="myCList">
-                    <li>Task Name<button class="Delete">Delete</button></li>
-                </ul>  
+                <!---Active To-Dos--->
+                <div class="active">
+                    <h2>Active To-Dos</h2>
+                    <ul id="activeList">
+
+                    </ul> 
                 </div>
-            </section>
+                
+                <!---Completed To-Dos--->
+                <div class="completed">
+                    <h2>Completed To-Dos</h2>
+                    <ul id="completedList">
+
+                        </ul>  
+                    </div>
+            </header>
         </main>
-    </header>
-</body>
+    </body>
