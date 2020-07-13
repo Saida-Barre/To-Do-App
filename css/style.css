@@ -1,34 +1,66 @@
-{
-    box-sizing: border-box
+*{
+ box-sizing: border-box;
 }
-
 .container {
-    background: lightblue
-    padding: 25px;
-    max-width: 760px;
-    margin: 25px auto;
-    border-radius: 10px;
-    border: 4px #09EBCA;
-    font-family: sans-serif;
+    background:#0517F9;
+    padding:25px;
+    max-width:1440px;
+    height: 1024px;
+    margin:0 auto;
+    overflow:hidden;
+    border-radius:10px;
+    border:4px solid #0517F9
+    font-family sans-serif;
+}/*header section*/
+ h1{
+     margin:0;
+     text-align:center;
+     text-transform:uppercase;
+     padding: 50px 50px;
+     font-size: 50px;   
+ }
+ h2{
+    margin:0;
+    text-align:center;
+    text-transform:uppercase;
+ }/*main section*/
+ h2{
+     font-size:20px;
+     text-align:center;
+     border-bottom:1px solid #030108;
+     padding: 0 0 10px;
+     color: #030108
+ }
+ .newTaskContainer{
+     text-align:center;
+ }
+.box { 
+    padding: 10px 15px;
+    border-radius:5px;
+    background-color: #FFFFFF;
+    margin:15px 0;
 }
-h1, h2 {
-    margin: 0;
-    text-align: center;
+.todo-list{
+    float:left;
+    width:35%;
+    margin: 50px
 }
-h2 {
-    font-size: 20px;
-    text-align: center;
-    border-bottom: 1px  #09EBCA;
-    padding: 0 0 10px;
-    color: midnightblue;
+.complete-list{
+    float:right;
+    width:35%; 
+    margin: 50px 
 }
-.box{
+ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+li{
+    padding:10px;
+    border-botton:1px dotted #CCC;
+}
 
-}
-.To-Do Form{
 
-}
-.completed completed to-do list;{
-    
-}
+
+
 
