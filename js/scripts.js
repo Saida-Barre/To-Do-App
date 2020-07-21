@@ -34,28 +34,25 @@ button.addEventListener("click", buttonPressed)
 function buttonPressed(event){
     event.preventDefault()
     console.log("button pressed!"); /*test passed*/
+    //this code creates a new <li> element:
+    let item = document.createElement("li"); 
+    //to add text to the <li> element, you must create a text node first. This code creates a text node:
+   
+   //************ added an input value inside textnode so that whenever we enter a input inside a function, it produces an output***********/
+    let textnode = document.createTextNode(input.value);
+    
+    item.prepend(textnode); //prepend the text to <li>
+    //finally, append the new element to an existing element. This code finds an existing element:
+    //this code appends the new element to the existing elements
+    activeList.prepend(item);
+    //STEP 3/Q2 - use prepend method to move element from activeList to first item of completedList
+    completedList.prepend(item);
 }
 
 /* STEP 3/Q1: append <li> to <ul> with id="activeList" 
 (cite: w3schools.com/jsref/met_node_appendchild.asp)
 _____________________________________________________*/
 
-//this code creates a new <li> element:
-let item = document.createElement("li"); 
 
-//to add text to the <li> element, you must create a text node first. This code creates a text node:
-let textnode = document.createTextNode("hello world!");
-
-//then you must append the textnode to the <li> element:
-item.prepend(textnode); //prepend the text to <li>
-
-//finally, append the new element to an existing element. This code finds an existing element:
-// done already>>>>>>>>let activeList = document.getElementById("activeList");
-
-//this code appends the new element to the existing elements
-activeList.prepend(item);
-//______________________________________________________________________________________________________________________________
-//STEP 3/Q2 - use prepend method to move element from activeList to first item of completedList
-completedList.prepend(item);
 
 
